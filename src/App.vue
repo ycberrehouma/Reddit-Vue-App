@@ -19,7 +19,7 @@
           }
         },
         methods: {
-          getInitialUsers () {
+          getInitialUsers () {// This function call the API, fetch and set some initial data ( 25 reddit posts) on page load:
             for (var i = 0; i < 25; i++) {
             var axios = require("axios");
             axios.request({
@@ -52,7 +52,7 @@
         }
         
         
-        scroll (posts) {
+        scroll (posts) {//This function calls the API and adds a new reddit post to the posts array when scrolling reaches the bottom of the page.
             window.onscroll = () => {
               let bottomOfWindow = document.documentElement.scrollTop + window.innerHeight === document.documentElement.offsetHeight;
 

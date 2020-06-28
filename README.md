@@ -41,3 +41,9 @@ Rules for using the reddit API:
 - All API clients must follow the API rules: https://github.com/reddit/reddit/wiki/API
 
 
+##The Logic behind Implementing the Infinite Scroll:
+
+Once we get the initial data (25 reddit Posts)  we create a new function scroll() and have it loaded in the mounted() lifecycle method. 
+
+This scroll() method calculates the bottom of the page to know if its reached or not which means that it will evaluates it as true or false. For this, we use  the documentElement.scrollTop, documentElement.offsetHeight properties and of window’s innerHeight properties to find out if scroll is at the bottom.
+

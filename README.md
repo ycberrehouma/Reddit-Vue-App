@@ -42,7 +42,7 @@ $ vue init webpack-simple infinite-scroll-vuejs
 
 
 ## The Logic behind Implementing the Infinite Scroll:
-
+<i>Sorted by newest post first<i/>
 Once we get the initial data (25 reddit Posts)  we create a new function <b>scroll()</b> and have it loaded in the <b>mounted()</b> method. 
 
 This <b>scroll()</b> method calculates the bottom of the page to know if its reached or not which means that it will evaluates it as true or false. For this, we use  the <b>documentElement.scrollTop, documentElement.offsetHeight properties and of window’s innerHeight properties</b> to find out if scroll is at the bottom.

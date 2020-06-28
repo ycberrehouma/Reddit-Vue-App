@@ -27,8 +27,8 @@ npm run dev
 npm run build
 ```
 
-Vue.js project created using the Vue CLI webpack-simple template to use Axios and MomentJS for data fetching and date formatting.
-a GET service method with Axios to fetch another Reddit posts from the Reddit API.
+Vue.js project created using the Vue CLI webpack-simple template to use <b>Axios and MomentJS</b> for data fetching and date formatting.
+a GET service method with <b>Axios</b> to fetch another Reddit posts from the Reddit API.
 
 ``` bash
 $ vue init webpack-simple infinite-scroll-vuejs
@@ -43,7 +43,7 @@ $ vue init webpack-simple infinite-scroll-vuejs
 
 ## The Logic behind Implementing the Infinite Scroll:
 
-Once we get the initial data (25 reddit Posts)  we create a new function scroll() and have it loaded in the mounted() lifecycle method. 
+Once we get the initial data (25 reddit Posts)  we create a new function <b>scroll()</b> and have it loaded in the <b>mounted()</b> method. 
 
-This scroll() method calculates the bottom of the page to know if its reached or not which means that it will evaluates it as true or false. For this, we use  the documentElement.scrollTop, documentElement.offsetHeight properties and of window’s innerHeight properties to find out if scroll is at the bottom.
+This <b>scroll()</b> method calculates the bottom of the page to know if its reached or not which means that it will evaluates it as true or false. For this, we use  the <b>documentElement.scrollTop, documentElement.offsetHeight properties and of window’s innerHeight properties</b> to find out if scroll is at the bottom.
 

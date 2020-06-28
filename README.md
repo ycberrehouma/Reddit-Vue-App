@@ -25,9 +25,10 @@ npm run dev
 
 # build for production with minification
 npm run build
-
+```
 
 Vue.js project created using the Vue CLI webpack-simple template to use Axios and MomentJS for data fetching and date formatting.
+
 ``` bash
 $ vue init webpack-simple infinite-scroll-vuejs
 ```

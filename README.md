@@ -35,13 +35,13 @@ $ vue init webpack-simple infinite-scroll-vuejs
 ```
 
 
-##Rules for using the reddit API:
+## Rules for using the reddit API:
 - You must read the terms and register in order to use the Reddit API, to then get the client ID and Secure Key to get authentication to call the API
 - All API clients must authenticate with OAUTH 2
 - All API clients must follow the API rules: https://github.com/reddit/reddit/wiki/API
 
 
-##The Logic behind Implementing the Infinite Scroll:
+## The Logic behind Implementing the Infinite Scroll:
 
 Once we get the initial data (25 reddit Posts)  we create a new function scroll() and have it loaded in the mounted() lifecycle method. 
 

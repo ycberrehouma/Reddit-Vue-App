@@ -28,14 +28,14 @@ npm run build
 ```
 
 Vue.js project created using the Vue CLI webpack-simple template to use Axios and MomentJS for data fetching and date formatting.
+a GET service method with Axios to fetch another Reddit posts from the Reddit API.
 
 ``` bash
 $ vue init webpack-simple infinite-scroll-vuejs
 ```
 
-a GET service method with Axios to fetch another Reddit posts from the Reddit API.
 
-Rules for using the reddit API:
+##Rules for using the reddit API:
 - You must read the terms and register in order to use the Reddit API, to then get the client ID and Secure Key to get authentication to call the API
 - All API clients must authenticate with OAUTH 2
 - All API clients must follow the API rules: https://github.com/reddit/reddit/wiki/API

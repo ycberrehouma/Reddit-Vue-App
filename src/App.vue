@@ -35,9 +35,14 @@
                 "scope": "public"    
               }
             }).then(response => {
-              this.redditPosts.push(response.data.results[j]);
-              j++;  
+              if(response.status == 200 ) {
+                this.redditPosts.push(response.data.children[j]);
+                j++;  
+              }
             });
+            .catch((error) => {
+              return Promise.reject(error)
+            })
             }
           } 
 
@@ -66,9 +71,14 @@
                     "scope": "public"    
                   }
                   }).then(response => {
-                    this.redditPosts.push(response.data.results[j]);  
+                    if(response.status == 200 ) {
+                      this.redditPosts.push(response.data.children[j]); 
+                      j++; 
+                    }
                   });
-                  j++;
+                  .catch((error) => {
+                    return Promise.reject(error)
+                  })
                 } 
               }
             };

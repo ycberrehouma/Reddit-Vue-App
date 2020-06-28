@@ -42,7 +42,7 @@ $ vue init webpack-simple infinite-scroll-vuejs
 
 
 ## The Logic behind Implementing the Infinite Scroll:
-<u><i>Sorted by newest post</i></u>
+<u><i>--Sorted by newest post--</i></u>
 <br>
 Once we get the initial data (25 reddit Posts)  we create a new function <b>scroll()</b> and have it loaded in the <b>mounted()</b> method. 
 

@@ -3,14 +3,8 @@
         <h1>Reddit Posts from r/aww</h1>
         <div class="redditPosts" v-for="post in redditPosts">
             <h4>{{post.subreddit-name}}</h4>
-            <reddit-list-container>
-              <a href="https://www.reddit.com/r/aww/comments/{{post.id}}/{{post.title}}">{{ post.title }}</a>
-              <img :src="post.picture">
-            </reddit-list-container>
-            <reddit-list-item>
-              <a href="https://www.reddit.com/r/aww/comments/{{post.id}}/{{post.title}}">{{ post.title }}</a>
-              <img :src="post.picture">
-            </reddit-list-item>
+            <reddit-list-container></reddit-list-container>
+            <reddit-list-item></reddit-list-item>
         </div>
         </div>
       </div>
@@ -24,6 +18,7 @@
               redditPosts: []
             }
           },
+          template: '<a href="https://www.reddit.com/r/aww/comments/{{post.id}}/{{post.title}}">{{ post.title }}</a> <img :src="post.picture">'
           methods: {
             getInitialUsers () {// This function call the API, fetch and set some initial data ( 25 reddit posts) on page load:
               var j =0;
@@ -65,6 +60,7 @@
               redditPosts: []
             }
           },
+          template: '<a href="https://www.reddit.com/r/aww/comments/{{post.id}}/{{post.title}}">{{ post.title }}</a> <img :src="post.picture">'
           methods: {    
             scroll (posts) {//This function calls the API and adds a new reddit post to the posts array when scrolling reaches the bottom of the page.
                 var j = 25;
